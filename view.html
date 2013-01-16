@@ -1,0 +1,133 @@
+<html>
+<head>
+<title>This is where you post content</title>
+<style>
+#main {
+  width: 520px;
+  border: 1px solid black;
+  margin:0px auto 0px auto;
+  padding:0px 0px 0px 0px;
+}
+
+.content {
+  display: table;
+  position: relative;
+  margin: 0 auto;
+}
+
+.controls label, .controls span#tags_label{
+  display: block;
+  float: left;
+  width: 150px;
+}
+
+div.controls > div {
+  padding: 5px;
+  position: relative;
+}
+
+div.controls input , div.controls textarea, div.controls.tags > div {
+  width: 200px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+div.tags {
+  width: auto;
+  height: 50px;
+  overflow: auto;
+  border: 1px solid black;
+}
+
+div.tags label {
+  display: block;
+  float: none;
+  width: auto;
+  padding-left: 15px;
+  text-indent: -15px;
+}
+
+div.tags input {
+  width: 13px;
+  height: 13px;
+  padding: 0 5px 0 5px;
+  margin: 0 5px 0 5px;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+  *overflow: hidden;
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+<div id="main">
+  <div class="content">
+
+    <h2>Add/Edit your content</h2>
+    <form>
+      <div class="controls">
+        <div class="control">
+          <label for="title">Title</label>
+          <input id="title" name="title" type="text">
+        </div>
+
+        <div class="control">
+          <label for="description">Description</label>
+          <textarea id="description" name="description" type="text"></textarea>
+        </div>
+
+        <div class="control">
+          <label for="image">Image</label>
+          <input id="image" name="image" type="file">
+        </div>
+
+        <div class="control">
+          <label>PDF</label>
+          <input name="pdf" type="file">
+        </div>
+
+        <div class="control">
+          <label>Offsite URL</label>
+          <input name="offsite_url" type="url">
+        </div>
+
+        <div class="control">
+          <label>Offsite link text</label>
+          <input name="link_text" type="text" maxlength="30">
+        </div>
+
+        <div class="control">
+          <span id="tags_label">Tags</span>
+          <div class="tags">
+            <div>
+              <label><input name="tags" type="checkbox" value="cloud"/>Cloud Computing</label>
+            </div>
+            <div>
+              <label><input name="tags" type="checkbox" value="mobile"/>Mobile App</label>
+            </div>
+            <div>
+              <label><input name="tags" type="checkbox" value="sensor"/>Sensors</label>
+            </div>
+            <div>
+              <label><input name="tags" type="checkbox" value="sensor"/>Sensors</label>
+            </div>
+            <div>
+              <label><input name="tags" type="checkbox" value="sensor"/>Sensors</label>
+            </div>
+          </div>
+        </div>
+
+
+      </div><!-- /.inputs -->
+    </form>
+  </div><!--/.content -->
+</div>
+
+</body>
+</html>
