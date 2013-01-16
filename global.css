@@ -1,5 +1,5 @@
 .mainHeader {
-  
+	
 }
 
 .subHeader {
@@ -42,7 +42,7 @@ body {
 	display: inline-block;
 }
 
-table.center {
+table.center, .tablelayout {
 	margin-left: auto;
 	margin-right: auto;
 	border-style: solid;
@@ -51,20 +51,20 @@ table.center {
 	width: 98%;
 }
 
-tr, th, td {
+tr, th, td, .tablerow, .tableheader, .tablecell {
 	border-color: #e0e0e0;
 	border-color: 0;
 }
 
-tr, td {
+tr, td, .tablerow, .tablecell {
 	border-bottom-width: 1px solid #999;
 }
 
-td, th {
+td, th, .tablecell, .tableheader {
 	padding: 5px 5px 5px 10px;
 }
 
-th {
+th, .tableheader {
 	border-bottom: none;
 	border-top-width: 1px solid #999;
 }
