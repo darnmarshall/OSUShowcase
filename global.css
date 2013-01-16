@@ -1,0 +1,70 @@
+.mainHeader {
+  
+}
+
+.subHeader {
+	
+}
+
+.information {
+	
+}
+
+.rightFloatImage {
+	float: right;
+	margin: 4px;
+}
+
+.orangeHeader {
+	font-family: Eksja, sans-serif;
+	font-weight: normal;
+	color: #c34500;
+	font-size: 30px;
+	margin-bottom: 4px;
+	text-align: left;
+}
+
+.bigBox {
+	
+}
+
+/* undiscussed css code */
+body {
+	font-family: Gudea, sans-serif;
+	text-align: center;
+	font-size: 16px;
+	line-height: 22px;
+}
+
+/* demo'd in class */
+.layout {
+	width: 709px;
+	display: inline-block;
+}
+
+table.center {
+	margin-left: auto;
+	margin-right: auto;
+	border-style: solid;
+	border-color: black;
+	border-width: 0.5px;
+	width: 98%;
+}
+
+tr, th, td {
+	border-color: #e0e0e0;
+	border-color: 0;
+}
+
+tr, td {
+	border-bottom-width: 1px solid #999;
+}
+
+td, th {
+	padding: 5px 5px 5px 10px;
+}
+
+th {
+	border-bottom: none;
+	border-top-width: 1px solid #999;
+}
