@@ -3,62 +3,57 @@
 <title>This is where you post content</title>
 <style>
 #main {
-  width: 520px;
+  width: 600px;
   border: 1px solid black;
   margin:0px auto 0px auto;
   padding:0px 0px 0px 0px;
 }
 
 .content {
-  display: table;
-  position: relative;
   margin: 0 auto;
+  text-align: center;
 }
 
-.controls label, .controls span#tags_label{
-  display: block;
-  float: left;
+.controls {
+  display: table;
+  margin: 0 auto;
+  text-align: left;
+}
+.controls .control {
+  display: table-row;
+}
+
+.controls .control > label
+{
   width: 150px;
-}
-
-div.controls > div {
-  padding: 5px;
-  position: relative;
-}
-
-div.controls input , div.controls textarea, div.controls.tags > div {
-  width: 200px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-div.tags {
-  width: auto;
-  height: 50px;
-  overflow: auto;
-  border: 1px solid black;
-}
-
-div.tags label {
-  display: block;
-  float: none;
-  width: auto;
-  padding-left: 15px;
-  text-indent: -15px;
-}
-
-div.tags input {
-  width: 13px;
-  height: 13px;
-  padding: 0 5px 0 5px;
-  margin: 0 5px 0 5px;
   vertical-align: middle;
-  position: relative;
-  top: -1px;
-  *overflow: hidden;
 }
 
+.controls .control > input,
+.controls .control > textarea,
+.controls .control > #tags
+{
+  margin: 5px;
+  width: 100%;
+}
+
+.controls .control > input,
+.controls .control > textarea,
+.controls .control > label
+{
+  display: table-cell;
+}
+
+#tags {
+  display: inline-block;
+  height: 70px;
+  border: 1px black solid;
+  overflow: auto;
+}
+
+.controls .control #label {
+  vertical-align: top;
+}
 
 </style>
 
@@ -103,23 +98,23 @@ div.tags input {
         </div>
 
         <div class="control">
-          <span id="tags_label">Tags</span>
-          <div class="tags">
-            <div>
+          <label for="tags">Tags</label>
+          <div id="tags">
+            <div class="control">
               <label><input name="tags" type="checkbox" value="cloud"/>Cloud Computing</label>
-            </div>
-            <div>
+            </div class="control">
+            <div class="control">
               <label><input name="tags" type="checkbox" value="mobile"/>Mobile App</label>
-            </div>
-            <div>
+            </div class="control">
+            <div class="control">
               <label><input name="tags" type="checkbox" value="sensor"/>Sensors</label>
-            </div>
-            <div>
+            </div class="control">
+            <div class="control">
               <label><input name="tags" type="checkbox" value="sensor"/>Sensors</label>
-            </div>
-            <div>
+            </div class="control">
+            <div class="control">
               <label><input name="tags" type="checkbox" value="sensor"/>Sensors</label>
-            </div>
+            </div class="control">
           </div>
         </div>
 
